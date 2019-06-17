@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <div class="header">
+      <h1>Chuno</h1>
+    </div>
+
+    <div class="game-rules">
+      <h2>Rules of the game</h2>
+      <p>If you've played Uno before, you'll know how to play Chuno.</p>
+      <ol>
+        <li>Each player starts with two cards in their hand</li>
+        <li>The card on top of the deck will be removed and will form the start of the discard pile</li>
+        <li>The first player is chosen randomly</li>
+        <li>A player can discard a card from their hand if <b>either</b> the colour or number matches that of the discard pile. This card should then be placed face up on the discard pile</li>
+        <li>Each player can only discard one card per turn</li>
+        <li>The first player to have an empty hand wins</li>
+      </ol>
+    </div>
+
+
+    <div id='start-game'>
+      <p>Ready to play?</p>
+      <button onclick='numberOfPlayers()'>Yes!</button>
+    </div>
+
+    <div id='num-of-players'>
+      <p>How many players will be in this game? (Must be between 2-6)</p>
+      <input id = 'numOfPlayers' name='numOfPlayers' type='number' value=''>
+      <br>
+      <button onclick='confirmNamesOfPlayers()'>Submit number of players</button>
+    </div>
+
+    <div id='player-names'>
+
+    </div>
+
+    <div id='confirm-names-and-play'>
+      <p>Your players are:</p>
+    </div>
+
+    <div id='discard-pile'>
+    </div>
+    <div id='game-play'>
+    </div>
+
+    <div id = 'go-or-not'>
+        <p>Do you have a match or do you need to skip a go?</p>
+        <button onclick='checkIfCanGo()'>I have a match and can play!</button>
+        <button onclick='checkIfNeedToSkip()'>I need to skip a go :(</button>
+    </div>
+
+    <div id='card-choice'>
+
+    </div>
+
+    <div id='check-user-choice'>
+
+    </div>
+
+    <div id='invalid-index'>
+    </div>
+
+    <div id='erroneous-inputs'>
+    </div>
+
+
+  </body>
+
+<script type="text/javascript" src="main.js"></script>
+
+</html>
